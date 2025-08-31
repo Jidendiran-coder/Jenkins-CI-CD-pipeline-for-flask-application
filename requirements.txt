@@ -1,0 +1,14 @@
+# Core Flask Dependencies
+flask
+flask-pymongo
+pymongo
+flask-bcrypt
+flask-jwt-extended
+python-dotenv
+certifi
+flask-swagger-ui
+
+# Testing Dependencies
+pytest
+requests
+mongomock
