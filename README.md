@@ -118,7 +118,7 @@ This project implements a comprehensive Continuous Integration and Continuous De
 #### Output
 This screenshot illustrates the first stage of the Jenkins pipeline, which captures and logs the unique build number. The build number serves as a critical identifier for tracking each specific build and deployment iteration.
 
-![Get Build Number Stage](/outputs/1_get_build_no.png)
+<img width="1290" height="339" alt="1_get_build_no" src="https://github.com/user-attachments/assets/e079dba6-867c-4456-a344-e972109a648a" />
 
 #### 2. Checkout Code
 - Pulls the latest code from the main branch of the GitHub repository
@@ -126,7 +126,7 @@ This screenshot illustrates the first stage of the Jenkins pipeline, which captu
 #### Output
 This screenshot demonstrates the Checkout Code stage, where Jenkins pulls the latest code from the main branch of the GitHub repository. This ensures that the most recent version of the codebase is used for building, testing, and deployment.
 
-![Checkout Code Stage](/outputs/2_checkout_code.png)
+<img width="1452" height="652" alt="2_checkout_code" src="https://github.com/user-attachments/assets/29a5e17e-0899-440b-ad46-06945805002d" />
 
 #### 3. Run Tests
 - Sets up a MongoDB container with seed data
@@ -139,11 +139,11 @@ This screenshot demonstrates the Checkout Code stage, where Jenkins pulls the la
 #### Output - Successful Test
 This screenshot shows a successful test run, demonstrating that all tests passed. The green indicators and test report confirm the application's functionality and code quality.
 
-![Run Tests Stage - Success](/outputs/3_run_test.png)
+<img width="1386" height="584" alt="3_run_test" src="https://github.com/user-attachments/assets/c67d8c61-be47-418e-9a3b-bcc4240d5a20" />
 
 #### Output - Successful Test Report
 
-![Test Results Report](/outputs/test_results.png)
+<img width="1457" height="418" alt="test_results" src="https://github.com/user-attachments/assets/cc6b5bc8-405c-4c18-af04-1ae6a8e64687" />
 
 #### 4. Build Docker Image
 - Builds a Docker image for the Flask application
@@ -152,7 +152,7 @@ This screenshot shows a successful test run, demonstrating that all tests passed
 #### Output
 This screenshot captures the Docker image build stage, where a Docker image is created for the Flask application. The build process compiles the application, installs dependencies, and packages the entire application into a portable, reproducible container.
 
-![Build Docker Image Stage](/outputs/4_build_docker.png)
+<img width="1277" height="545" alt="4_build_docker" src="https://github.com/user-attachments/assets/364a6460-0d58-486a-b017-712c47418004" />
 
 #### 5. Test Docker Credentials
 - Validates Docker Hub credentials
@@ -161,7 +161,7 @@ This screenshot captures the Docker image build stage, where a Docker image is c
 #### Output
 This screenshot demonstrates the Docker credentials testing stage, which validates the Docker Hub authentication credentials. This critical security step ensures secure and authorized access to Docker Hub for pushing and pulling container images.
 
-![Test Docker Credentials Stage](/outputs/5_test_docker.png)
+<img width="1299" height="578" alt="5_test_docker" src="https://github.com/user-attachments/assets/c9cf8b32-3d14-48e4-8968-418f0216e0ab" />
 
 #### 6. Push Docker Image
 - Pushes the built Docker image to Docker Hub
@@ -170,8 +170,7 @@ This screenshot demonstrates the Docker credentials testing stage, which validat
 #### Output - Stage
 This screenshot illustrates the Push Docker Image stage, where the newly built Docker image is securely uploaded to Docker Hub. This step ensures that the latest version of the application is available for deployment and can be easily pulled by other systems or team members.
 
-![Push Docker Image Stage](/outputs/6_push_docker.png)
-
+<img width="1325" height="633" alt="6_push_docker" src="https://github.com/user-attachments/assets/6bb4d8f3-ab32-4582-a8b8-4bd68be95a48" />
 
 #### 7. Deploy to EC2
 - Connects to a predefined EC2 instance via SSH
@@ -187,7 +186,7 @@ This screenshot illustrates the Push Docker Image stage, where the newly built D
 #### Output
 This screenshot depicts the Deploy to EC2 stage, which demonstrates the automated deployment process to the target EC2 instance. The image shows the successful SSH connection, Docker image pull, and container startup, highlighting the seamless and reproducible deployment workflow.
 
-![Deploy to EC2 Stage](/outputs/7_deploy_ec2.png)
+<img width="1282" height="645" alt="7_deploy_ec2" src="https://github.com/user-attachments/assets/39aef96c-cfcf-42ff-851c-426250866b52" />
 
 ### Notification System
 - Sends email notifications for:
@@ -207,7 +206,7 @@ This screenshot depicts the Deploy to EC2 stage, which demonstrates the automate
 
 This screenshot shows the Docker image cleanup stage, which is an essential part of maintaining a clean and efficient Docker environment. After successful deployment, the pipeline removes older Docker images to prevent disk space accumulation and keep the system optimized.
 
-![Clean Docker Images Stage](/outputs/8_post_clean_image.png)
+<img width="1445" height="637" alt="8_post_clean_image" src="https://github.com/user-attachments/assets/eea414b6-9944-4b6d-8d27-8ed12a96ff3a" />
 
 ### Environment Variables
 Key environment variables used in the pipeline:
