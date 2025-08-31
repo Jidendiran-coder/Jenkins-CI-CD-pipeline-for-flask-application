@@ -24,7 +24,7 @@ services:
       - "8000:8000"
     environment:
       - MONGO_URI=mongodb://mongo-db:27017/flask_db
-      - JWT_SECRET_KEY=jidendir
+      - JWT_SECRET_KEY=jidendiran
       - MONGO_DB_NAME=flask_db
     depends_on:
       - mongo-db
