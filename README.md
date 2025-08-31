@@ -145,12 +145,6 @@ This screenshot shows a successful test run, demonstrating that all tests passed
 
 ![Test Results Report](/outputs/test_results.png)
 
-
-#### Output - Failed Tests
-This screenshot illustrates a test failure scenario, highlighting the importance of comprehensive testing. When tests fail, the Jenkins pipeline provides detailed error messages and stack traces to help developers quickly identify and resolve issues.
-
-![Run Tests Stage - Failure](/outputs/test_failure.png)
-
 #### 4. Build Docker Image
 - Builds a Docker image for the Flask application
 - Tags the image with the current build number
@@ -177,10 +171,6 @@ This screenshot demonstrates the Docker credentials testing stage, which validat
 This screenshot illustrates the Push Docker Image stage, where the newly built Docker image is securely uploaded to Docker Hub. This step ensures that the latest version of the application is available for deployment and can be easily pulled by other systems or team members.
 
 ![Push Docker Image Stage](/outputs/6_push_docker.png)
-
-#### Output - Docker Hub Image with Tag of the release
-
-![Docker Hub Image with Tag of the release](/outputs/docker_hub_update.png)
 
 
 #### 7. Deploy to EC2
@@ -218,24 +208,6 @@ This screenshot depicts the Deploy to EC2 stage, which demonstrates the automate
 This screenshot shows the Docker image cleanup stage, which is an essential part of maintaining a clean and efficient Docker environment. After successful deployment, the pipeline removes older Docker images to prevent disk space accumulation and keep the system optimized.
 
 ![Clean Docker Images Stage](/outputs/8_post_clean_image.png)
-
-#### Output - Send Email
-
-This screenshot illustrates the email notification sent after a successful deployment. The email provides a comprehensive summary of the build and deployment process, including:
-
-- Job Name
-- Build Number
-- Git Branch
-- Repository URL
-- Docker Image Details
-- Deployment Target (EC2 Host)
-- Deployment Timestamp
-
-The email uses a clean, HTML-formatted layout with color-coded status indicators (green checkmark ✅) to quickly communicate the successful deployment. It includes a direct link to the full build logs, allowing team members to easily access detailed information about the deployment.
-
-This automated notification system ensures that all stakeholders are immediately informed about the deployment status, promoting transparency and quick communication within the development team.
-
-![Send Email Notification](/outputs/email_success.png)
 
 ### Environment Variables
 Key environment variables used in the pipeline:
