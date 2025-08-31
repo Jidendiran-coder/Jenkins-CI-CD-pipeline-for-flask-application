@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        GITREPO = "https://github.com/Jidendiran-coder/Graded-Assignment-on-CICD-Pipeline-"
+        GITREPO = "https://github.com/Jidendiran-coder/Jenkins-CI-CD-pipeline-for-flask-application.git"
         GIT_BRANCH = "main"
         EC2_SSH = "jide-ec2"
         EC2_USER = "ubuntu"
