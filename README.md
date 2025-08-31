@@ -12,7 +12,7 @@
 1. Clone the repository
 ```bash
 git clone <your-repo-url>
-cd Graded-Assignment-on-CICD-Pipeline-/Jenkins CI CD pipeline for flask application
+cd Jenkins-CI-CD-pipeline-for-flask-application
 ```
 
 2. Environment Configuration
